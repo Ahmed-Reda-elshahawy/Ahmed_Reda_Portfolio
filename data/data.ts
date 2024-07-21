@@ -1,5 +1,3 @@
-import projImg1 from "@/public/1.png";
-
 export const ProjectsData = [
     {
         id: 1,
@@ -26,4 +24,27 @@ export const ProjectsData = [
         projectImg: "/3.png"
 
     },
+] as const;
+
+export const Links = [
+    {
+        linkName: "About",
+        linkPath: "#about"
+    },
+    {
+        linkName: "Projects",
+        linkPath: "#projects"
+    },
+    {
+        linkName: "Skills",
+        linkPath: "#skills"
+    },
+    {
+        linkName: "Experience",
+        linkPath: "#experience"
+    },
+] as const;
+
+export const MySkills = [
+    "Html", "Css", "Tailwind css", "Sass", "JavaScript", "TypeScript", "React", "Next js", "Git", "Framer motion"
 ] as const

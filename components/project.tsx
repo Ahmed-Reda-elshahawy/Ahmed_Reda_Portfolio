@@ -5,8 +5,8 @@ type projectProps = (typeof ProjectsData)[number];
 
 export default function Project({ title, description, skills, projectImg }: projectProps) {
     return (
-        <div className="bg-zinc-300 shadow-md mb-6 p-4 rounded-lg text-center mx-auto relative overflow-hidden lg:max-w-[60rem] lg:h-[28rem] lg:text-start lg:flex md:gap-6">
-            <article className="w-full flex flex-col items-center text-center lg:items-start lg:text-start">
+        <div className=" group bg-zinc-300 shadow-md mb-6 p-6 rounded-lg text-center mx-auto relative overflow-hidden lg:max-w-[60rem] lg:h-[28rem] lg:text-start lg:flex md:gap-6">
+            <article className="w-full flex flex-col items-center text-center lg:items-start lg:text-start lg:group-odd:items-end">
                 <div className="mb-5">
                     <h3 className="text-xl font-semibold mb-3">{title}</h3>
                     <p className="sm:max-w-[30rem] lg:max-w-[20rem]">{description}</p>
@@ -19,7 +19,13 @@ export default function Project({ title, description, skills, projectImg }: proj
                     }
                 </ul>
             </article>
-            <Image src={projectImg} alt="project image" quality={90} width={500} height={500} className="hidden lg:block lg:border lg:shadow-xl lg:absolute lg:-bottom-1 lg:-right-56 lg:w-[50rem] lg:object-cover lg:rounded-t-lg lg:hover:scale-105 lg:hover:-rotate-1 lg:brightness-90 lg:transition-all" />
+            <Image src={projectImg} alt="project image" quality={90} width={500} height={500}
+                className="hidden lg:block lg:border lg:shadow-xl lg:saturate-150
+                lg:absolute lg:-bottom-1 lg:-right-60 lg:w-[45rem]
+                lg:object-cover lg:rounded-t-lg lg:transition-all
+                lg:group-hover:scale-105 lg:group-hover:-rotate-1 
+                lg:group-odd:-left-60 lg:group-odd:group-hover:rotate-1"
+            />
         </div>
     )
 }

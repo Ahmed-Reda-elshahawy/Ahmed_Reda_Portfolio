@@ -1,10 +1,15 @@
+'use client';
+
 import Image from "next/image"
 import myImg from "@/public/me.jpg";
 import { IoIosArrowForward, IoLogoGithub, IoLogoLinkedin, IoMdDownload } from "react-icons/io";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Hero() {
+    const { ref } = useSectionInView("About");
+
     return (
-        <section className="mx-10 pt-40 text-center" id="about">
+        <section ref={ref} className="mx-10 pt-40 text-center" id="about">
             <article>
                 <Image src={myImg} alt="my picture" priority={true} className="w-32 h-32 rounded-full object-cover border-8 border-zinc-300 shadow-lg mx-auto" />
                 <h2 className="mt-3 mb-1 font-medium text-zinc-700 text-xl tracking-wide">Ahmed Reda Fawzi</h2>
