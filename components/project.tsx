@@ -1,9 +1,11 @@
 import { ProjectsData } from "@/data/data"
 import Image from "next/image";
+import Link from "next/link";
+import { FaCode, FaEye } from "react-icons/fa";
 
 type projectProps = (typeof ProjectsData)[number];
 
-export default function Project({ title, description, skills, projectImg }: projectProps) {
+export default function Project({ title, description, skills, projectImg, liveDemo, githupLink }: projectProps) {
     return (
         <div className="group bg-zinc-300 shadow-md mb-6 p-6 rounded-lg relative overflow-hidden text-center lg:w-[60rem] lg:h-[28rem] lg:text-start lg:flex md:gap-6">
             <article className="w-full flex flex-col items-center text-center lg:items-start lg:text-start lg:group-odd:items-end">
@@ -26,6 +28,16 @@ export default function Project({ title, description, skills, projectImg }: proj
                 lg:group-hover:scale-105 lg:group-hover:-rotate-1 
                 lg:group-odd:-left-60 lg:group-odd:group-hover:rotate-1"
             />
+            <div className="flex justify-center mt-5 gap-4 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
+                <Link href={githupLink}>
+                    <FaCode className="text-xl w-8 h-8 bg-slate-100 rounded-full p-1 shadow text-gray-600 cursor-pointer" />
+                </Link>
+                {liveDemo &&
+                    <Link href={liveDemo}>
+                        <FaEye className="text-xl w-8 h-8 bg-slate-100 rounded-full p-1 shadow text-gray-600 cursor-pointer" />
+                    </Link>
+                }
+            </div>
         </div>
     )
 }

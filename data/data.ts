@@ -9,7 +9,9 @@ export const ProjectsData = [
         title: "Graduation Project",
         description: "Successfully implemented a real-time chat application with Firebase, demonstrating proficiency in integrating third-party services. The project also highlights experience with chatbots and CRUD operations, showcasing a well-rounded skillset.",
         skills: ["React", "Tailwind css", "Tanstack query", "React router dom", "Css modules"],
-        projectImg: "/1.png"
+        projectImg: "/1.png",
+        liveDemo: "https://youtu.be/w6PfKM9Jces",
+        githupLink: "https://github.com/eslamar3y/grad_project"
     },
     {
         id: 2,
@@ -18,7 +20,9 @@ export const ProjectsData = [
                         checkout. The website also features a user authentication system and an admin dashboard for managing products, 
                         orders, and users`,
         skills: ["React", "Redux toolkit", "Tailwind css", "React router dom", "Sass"],
-        projectImg: "/2.png"
+        projectImg: "/2.png",
+        liveDemo: "https://ahmed-reda-elshahawy.github.io/ecommerce-website/",
+        githupLink: "https://github.com/Ahmed-Reda-elshahawy/ecommerce-website"
     },
     {
         id: 3,
@@ -26,7 +30,9 @@ export const ProjectsData = [
         description: `This project is a Next.js application designed to showcase a variety of meals, provide detailed information about each 
                     meal, and enable users to create and share new meals with preparation steps`,
         skills: ["Next js", "React", "Tailwind css", "sqlite", "Css modules"],
-        projectImg: "/3.png"
+        projectImg: "/3.png",
+        liveDemo: undefined,
+        githupLink: "https://github.com/Ahmed-Reda-elshahawy/Restaurant-Using-Next"
 
     },
 ] as const;
@@ -60,27 +66,27 @@ export const MySkills = [
 
 export const experiencesData = [
     {
-        title: "Graduated bootcamp",
-        location: "Miami, FL",
+        title: "ITI frontend trainee",
+        location: "ITI Monofia branch",
         description:
-        "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-        icon: React.createElement(LuGraduationCap),
-        date: "2019",
-    },
-    {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
-        description:
-        "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+        "Developed a responsive e-commerce website using HTML, CSS, Bootstrap, JavaScript, and React.",
         icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
+        date: "8 / 2022  -  9 / 2022",
     },
     {
-        title: "Full-Stack Developer",
-        location: "Houston, TX",
+        title: "ITI frontend trainee",
+        location: "ITI Mansora branch",
         description:
-        "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-        icon: React.createElement(FaReact),
-        date: "2021 - present",
+        "Collaborated with a team to build a responsive store website using React, HTML5, CSS3, Bootstrap, and JavaScript.",
+        icon: React.createElement(CgWorkAlt),
+        date: "7 / 2023  -  9 / 2023",
+    },
+    {
+        title: "Computer science graduation",
+        location: "Kafr Elsheikh university",
+        description:
+        "Recent Computer Science graduate and highly motivated Front-End Developer with a strong focus on React development.",
+        icon: React.createElement(LuGraduationCap),
+        date: "2024",
     },
 ] as const;
