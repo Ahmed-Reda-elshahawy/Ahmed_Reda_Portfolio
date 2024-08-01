@@ -9,7 +9,7 @@ export default function MainHeader() {
 
     return (
         <header className="w-full fixed z-10">
-            <ul className="bg-zinc-200/95 border border-zinc-400/50 shadow-md flex items-center justify-center gap-6 flex-wrap py-4 sm:w-fit sm:mx-auto sm:my-4 sm:px-8 sm:rounded-full">
+            <ul className="bg-zinc-200/95 border border-zinc-400/50 px-2 shadow-md flex items-center justify-center gap-4 flex-wrap py-3 box-border sm:gap-6 sm:w-fit sm:mx-auto sm:my-4 sm:px-8 sm:rounded-full">
                 {
                     Links.map((link, i) => (
                         <li key={i}>

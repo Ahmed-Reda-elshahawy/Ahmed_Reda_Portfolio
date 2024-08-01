@@ -23,7 +23,6 @@ export default function RootLayout({
         <ActiveSectionContextPorvider>
           {children}
         </ActiveSectionContextPorvider>
-
       </body>
     </html>
   );
