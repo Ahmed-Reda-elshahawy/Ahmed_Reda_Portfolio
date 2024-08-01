@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <MainHeader />
       <Toaster position="top-right" />
-      <main className="flex flex-col items-center mx-8 text-center">
+      <main className="flex flex-col items-center text-center px-5 sm:mx-8">
         <Hero />
         <SectionDivider />
         <Projects />

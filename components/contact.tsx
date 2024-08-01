@@ -24,7 +24,7 @@ export default function Contact() {
     const { ref } = useSectionInView("Contact");
 
     return (
-        <motion.section ref={ref} id="contact" className='scroll-mt-28 mb-28 px-2' variants={apperanceAnimation} initial={"initial"} whileInView={"animate"} >
+        <motion.section ref={ref} id="contact" className='scroll-mt-28 mb-28' variants={apperanceAnimation} initial={"initial"} whileInView={"animate"} >
             <SectionHeading>Contact</SectionHeading>
             <p className='-mt-8 mb-8'>
                 Please contact me directly at <a href="mailto:ahmed.reda.elshahawy@gmail.com" className='underline'>ahmed.reda.elshahawy@gmail.com</a> or through this form
