@@ -7,7 +7,7 @@ type projectProps = (typeof ProjectsData)[number];
 
 export default function Project({ title, description, skills, projectImg, liveDemo, githupLink }: projectProps) {
     return (
-        <div className="group bg-zinc-300 shadow-md mb-6 p-6 rounded-lg relative overflow-hidden text-center lg:w-[60rem] lg:h-[28rem] lg:text-start lg:flex md:gap-6">
+        <div className="group px-2 bg-zinc-300 shadow-md mb-6 p-6 rounded-lg relative overflow-hidden text-center lg:w-[60rem] lg:h-[28rem] lg:text-start lg:flex md:gap-6">
             <article className="w-full flex flex-col items-center text-center lg:items-start lg:text-start lg:group-odd:items-end">
                 <div className="mb-5">
                     <h3 className="text-xl font-semibold mb-3">{title}</h3>
