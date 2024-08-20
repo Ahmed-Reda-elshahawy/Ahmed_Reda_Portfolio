@@ -41,8 +41,8 @@ export default function Contact() {
                     toast.success("Email sent successfully");
                 }}
             >
-                <input type="email" name="email" id="email" className='px-4 py-3 outline-none rounded shadow' placeholder='email' required maxLength={500} />
-                <textarea name="message" id="message" rows={5} className='px-4 py-3 resize-none outline-none rounded shadow' placeholder='message' required maxLength={5000}></textarea>
+                <input type="email" name="email" id="email" className='px-4 py-3 outline-none rounded shadow dark:bg-zinc-700' placeholder='email' required maxLength={500} />
+                <textarea name="message" id="message" rows={5} className='px-4 py-3 resize-none outline-none rounded shadow dark:bg-zinc-700' placeholder='message' required maxLength={5000}></textarea>
                 <SubmitBtn />
             </form>
         </motion.section>
