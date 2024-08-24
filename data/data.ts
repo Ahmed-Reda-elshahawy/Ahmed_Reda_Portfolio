@@ -4,8 +4,22 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 export const ProjectsData = [
+
     {
         id: 1,
+        title: "Financial Dashboard",
+        description: `simplified version of the financial dashboard that has:
+                    A public home page.
+                    A login page.
+                    Dashboard pages that are protected by authentication.
+                    The ability for users to add, edit, and delete invoices.`,
+        skills: ["Next Js", "Tailwind Css", "Css Modules", "TypeScript", "Form Actions"],
+        projectImg: "/4.png",
+        liveDemo: "https://myfinancial-dashboard.vercel.app/",
+        githupLink: "https://github.com/Ahmed-Reda-elshahawy/financial-dashboard"
+    },
+    {
+        id: 2,
         title: "Graduation Project",
         description: "Successfully implemented a real-time chat application with Firebase, demonstrating proficiency in integrating third-party services. The project also highlights experience with chatbots and CRUD operations, showcasing a well-rounded skillset.",
         skills: ["React", "Tailwind css", "Tanstack query", "React router dom", "Css modules"],
@@ -33,7 +47,6 @@ export const ProjectsData = [
         projectImg: "/3.png",
         liveDemo: undefined,
         githupLink: "https://github.com/Ahmed-Reda-elshahawy/Restaurant-Using-Next"
-
     },
 ] as const;
 
